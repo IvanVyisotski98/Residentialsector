@@ -1,5 +1,5 @@
 # Этап сборки
-FROM gradle:8.5-jdk17 AS build
+FROM gradle:8.14-jdk17 AS build
 WORKDIR /app
 COPY . .
 RUN gradle bootJar --no-daemon
